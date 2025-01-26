@@ -81,3 +81,12 @@ body{
 .hide{
     display: none;
 }
+
+@media screen and (max-width: 600px){
+    .box{
+        height: 8vh;
+        width: 8vh;
+        border-radius:1vh ;
+        font-size: 8vmin;   
+    }
+}
