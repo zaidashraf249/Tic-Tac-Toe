@@ -84,9 +84,18 @@ body{
 
 @media screen and (max-width: 600px){
     .box{
-        height: 8vh;
-        width: 8vh;
+        height: 25%;
+        width: 25%;
         border-radius:1vh ;
         font-size: 8vmin;   
+    }
+    .game{
+        height: 30vmin;
+        width: 30vmin;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.5vh;
     }
 }
