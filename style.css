@@ -84,8 +84,8 @@ body{
 
 @media screen and (max-width: 600px){
     .box{
-        height: 30%;
-        width: 30%;
+        height: 25%;
+        width: 25%;
         border-radius:1vh ;
         font-size: 8vmin;   
     }
