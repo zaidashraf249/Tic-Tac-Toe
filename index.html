@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic_Tac_Toe</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <center>
-        <div class="msgContainer hide">
-            <p id="msg">Winner</p>
-            <button id="new">New Game</button>
-        </div>
-    <h1>Tic Tac Toe</h1>
-    <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-        </div>
+  <center>
+    <div class="intro-screen" id="introScreen">
+      <h1>Tic Tac Toe</h1>
+      <input type="text" id="playerO" placeholder="Player O name" />
+      <input type="text" id="playerX" placeholder="Player X name" />
+      <button id="startBtn">Start Game</button>
     </div>
-    <button id="reset">Reset Game</button>
-</center>
-<script src="script.js"></script>
+
+    <div class="game-container hide" id="gameContainer">
+      <div class="header">
+        <h1>Tic Tac Toe</h1>
+        <p id="turnDisplay" class="turn">Turn: Player O</p>
+      </div>
+
+      <div class="scoreboard">
+        <p id="scoreO">O: 0</p>
+        <p id="scoreX">X: 0</p>
+      </div>
+
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+
+      <div class="msgContainer hide">
+        <p id="msg">Winner</p>
+        <button id="new">New Game</button>
+      </div>
+
+      <button id="reset">Reset Scoreboard</button>
+    </div>
+  </center>
+
+  <script src="script.js"></script>
 </body>
 </html>
